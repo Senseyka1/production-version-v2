@@ -30,5 +30,6 @@ module.exports = {
 		'@typescript-eslint/ban-ts-comment': 'off',
 		'i18next/no-literal-string': ['error', { markupOnly: true }],
 		// 'no-unused-vars': 'warn',
+		'max-len': ['error', { ignoreCommets: true }],
 	},
 }
