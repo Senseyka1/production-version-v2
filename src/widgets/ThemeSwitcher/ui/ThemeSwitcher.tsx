@@ -11,7 +11,7 @@ import { Theme } from 'app/providers/ThemeProvider/lib/ThemeContext'
 import { Button, ThemeButton } from 'shared/ui/Button/Button'
 
 interface IThemeSwitcher {
-	className?: string;
+	className?: string
 }
 
 export const ThemeSwitcher = (props: IThemeSwitcher) => {
@@ -22,9 +22,8 @@ export const ThemeSwitcher = (props: IThemeSwitcher) => {
     return (
         <Button
             theme={ThemeButton.CLEAR}
-            className={classNames(cls.ThemeSwitcher, {}, [className])}
-            onClick={toggleTheme}
-        >
+            className={classNames('', {}, [className])}
+            onClick={toggleTheme}>
             {theme === Theme.DARK ? <DarkIcon /> : <LightIcon />}
         </Button>
     )

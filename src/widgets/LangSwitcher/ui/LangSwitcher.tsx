@@ -8,8 +8,8 @@ import i18n from 'shared/config/i18n/i18n'
 import { Button, ThemeButton } from 'shared/ui/Button/Button'
 
 interface ILangSwitcher {
-	className?: string;
-	collapsed: boolean;
+	className?: string
+	collapsed: boolean
 }
 
 export const LangSwitcher = (props: ILangSwitcher) => {
@@ -22,10 +22,9 @@ export const LangSwitcher = (props: ILangSwitcher) => {
 
     return (
         <Button
-            className={classNames(cls.LangSwitcher, {}, [className])}
+            className={classNames('', {}, [className])}
             theme={ThemeButton.CLEAR}
-            onClick={toggle}
-        >
+            onClick={toggle}>
             {collapsed ? t('languageSmall') : t('languageLarge')}
         </Button>
     )
